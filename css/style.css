@@ -1,0 +1,437 @@
+body {
+    font-family: tahoma, Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+
+p,
+.about li {
+    font-size: 15.5px;
+}
+
+h1,
+h2,
+.about strong {
+    color: #d55551;
+    margin-bottom: 30px;
+}
+
+hr {
+    background-color: #000
+}
+/* =============================================================================================== */
+/* top nav */
+
+#top_nav,
+footer {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar-inverse .navbar-toggle {
+    border: 0;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder
+}
+/* =============================================================================================== */
+
+/* To make nav fixed after scrolling  */
+
+.myNav {
+    z-index: 2;
+}
+/* =============================================================================================== */
+
+/* Page content */
+
+.content {
+    z-index: 1;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+/*================================================================================= */
+
+/* header */
+
+#myNav {
+    height: 50px;
+    visibility: visible;
+    animation-name: bounceInDown;
+}
+
+#myNav .navbar {
+    z-index: 101;
+}
+
+.logo {
+    width: 100%;
+    margin: 10px 0;
+    visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 300ms;
+    animation-iteration-count: infinite;
+    animation-name: pulse;
+}
+
+.search_form {
+    padding: 15px
+}
+
+.search_form .input-group .form-control:first-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.search_form .input-group-btn:last-child>.btn {
+    border-radius: 5px 0 0 5px;
+}
+
+/*================================================================================= */
+
+/* slider under nav */
+
+.container #myCarousel .carousel-inner {
+    margin: 50px auto;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+/*================================================================================= */
+
+/* main content in home page */
+
+.about p,
+.about_priefly p {
+    text-align: justify;
+    font-size: 16.5px;
+    font-weight: 100;
+    line-height: 2;
+}
+
+.video {
+    margin-top: 10px;
+}
+
+main .our_services {
+    margin-bottom: 20px;
+}
+
+main .our_services p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify
+}
+
+main .our_services .service_img {
+    width: 100%;
+}
+
+/*===========main content in b_blood========================  */
+
+aside,
+main {
+    margin-top: 50px
+}
+
+.b-blood_aside .our_services {
+    text-align: center;
+    margin: 0 0 10px 5px;
+    height: 170px;
+}
+
+.b-blood_aside .our_services:first-child {
+    background: url("../img/b-blood.jpg") no-repeat;
+    border-radius: 10px;
+}
+
+.b-blood_aside .our_services:nth-child(2) {
+    background: url("../img/a.jpg") no-repeat;
+    border-radius: 10px;
+}
+
+.b-blood_aside .our_services:nth-child(3) {
+    background: url("../img/baby.jpg") no-repeat;
+    border-radius: 10px;
+}
+
+.b-blood_aside .our_services h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.b-blood_main a {
+    text-decoration: none;
+    color: black;
+}
+
+.b-blood_main a h3:hover {
+    color: #d55551;
+}
+
+.b-blood_main article {
+  
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+    border-color: #d55551;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 10px;
+    visibility: visible;
+    animation-name: fadeInDown;
+}
+
+.b-blood_main article img {
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: -15px;
+    height: 100%;
+    width: 100%;
+}
+
+/* ==========general articles===== */
+
+.article_main {
+    border: 1px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.article_main p,
+.article_main li {
+    line-height: 35px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.article_main img {
+    margin: 10px auto;
+    width: 100%;
+    height: 300px;
+}
+
+/*================================================================================= */
+
+
+/*================================================================================= */
+
+/* footer */
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+footer .navbar {
+    margin-bottom: 0;
+}
+
+footer p {
+    padding: 10px
+}
+
+.footer-social {
+    font-size: 30px
+}
+
+.footer-social li:first-child a:hover {
+    color: #436eac;
+}
+
+.footer-social ul li:nth-child(2) a:hover {
+    color: #0598c9
+}
+
+.footer-social ul li:nth-child(3) a:hover {
+    color: #e32114;
+}
+
+.footer-social ul li:nth-child(4) a:hover {
+    color: #d64b2e;
+}
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}
+
+/* ===================================================================================================================== */
+
+.main_privacy,
+aside_privacy {
+    padding: 10px;
+}
+
+/* ===================================================================================================================== */
+
+/* contact us */
+
+.contact_form {
+    margin-right: 20px
+}
+
+.contact_form textarea {
+    resize: vertical;
+    overflow: auto;
+}
+
+/* ===================================================================================================================== */
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 999;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    padding-top: 30px;
+}
+
+.modal-content .container .form-group:first-child {
+    margin-bottom: 40px
+}
+
+/* The Close Button (x) */
+
+.close {
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+/* ===================================================================================================================== */
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@media (max-width:425px) {
+    main .our_services p {
+        font-size: 14px;
+    }
+    .support img{width: 50%}
+    .footer-social {
+        font-size: 20px
+    }
+}
+
+@media(width:768px) {
+    .support img{width: 50%}
+    #top_nav,
+    footer {
+        font-size: 16px;
+        font-weight: bolder;
+    }
+}
+
+@media (width:1024px) {
+    main .our_services p {
+        font-size: 16px;
+    }
+    #search_blood,
+    #hospital_search .modal-content {
+        width: 50%
+    }
+}
+
+@media (width:1440px) {
+    main .our_services p {
+        font-size: 17.5px;
+    }
+    #search_blood,
+    #hospital_search .modal-content {
+        width: 50%
+    }
+}
